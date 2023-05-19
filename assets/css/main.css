@@ -1,0 +1,90 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+a{text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+header{
+  background-image: url('/assets/img/banner-bg.png');
+   color: white;
+   padding-top: 20px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   padding-bottom: 300px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.all__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header__logo{
+    font-size: 24px;
+}
+.menu__list li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.menu__list li a:hover{
+    color: orange;
+}
+.header__boxes{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header__box{
+    width: 600px;
+}
+.header__box h1{
+
+}
+
+
+
+  .header__boxes .header__box h1{
+    font-size: 55px;
+}
+  .header__boxes .header__box p{
+    padding-top: 50px;
+    line-height: 30px;
+}
+.header__boxes .header__box a{
+    margin-top: 30px;
+display: block;
+
+width:150px;
+background-color: rgb(236, 66, 66);
+border-radius: 30px;
+text-align: center;
+font-size: 14px;
+color: white;
+padding: 5px;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header__boxes .header__box a:hover{
+    background-color: rgb(44, 44, 248);
+}
+.about__boxes{
+    
+}
