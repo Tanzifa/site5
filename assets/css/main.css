@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+   
 }
 a{text-decoration: none;
 }
@@ -11,6 +11,23 @@ a{text-decoration: none;
 ul{
     list-style: none;
 }
+.btn{
+    display: block;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-transform: uppercase;
+    
+
+}
+
+
+     /*HEADER START*/
+
+
 header{
   background-image: url('/assets/img/banner-bg.png');
    color: white;
@@ -26,65 +43,406 @@ header{
     max-width: 1200px;
     margin: 0 auto;
 }
-.all__header{
+.all__header .header__menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.menu__list{
+.all__header .navbar .menu__list{
     display: flex;
     align-items: center;
     gap: 40px;
+    position: relative;
+    text-transform: uppercase;
 }
-.header__logo{
+.all__header .header__menu   .header__logo{
     font-size: 24px;
 }
-.menu__list li a{
+.all__header .navbar .menu__list li a{
     color: white;
     font-size: 14px;
     font-weight: 600;
 }
-.menu__list li a:hover{
+.all__header .navbar .menu__list li a:hover{
     color: orange;
+
 }
-.header__boxes{
+.all__header .navbar .menu__list li .drop__menu{
+    display: none;
+}
+
+
+.all__header .navbar .menu__list .drop__down:hover .drop__menu{
+    display: block;
+}
+.all__header .navbar .menu__list .sub__menu{
+   
+    position: absolute;
+    background-color: white;
+    margin-top: 10px;
+    width: 200px;
+    transition: 2s;
+   
+    
+
+}
+.all__header .navbar .menu__list .sub__menu li{
+    position: relative;
+    border-bottom: 1px solid rgb(250, 238, 238);
+    padding: 10px;
+   
+}
+
+.all__header .navbar .menu__list .sub__menu li a{
+    color: rgb(94, 92, 92);
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.all__header .navbar .menu__list .sub__menu li a:hover{
+    color: red;
+}
+
+
+   /* ASAGIDA DROP MENYU HOVER OLANDA SAGDA YARANAN QIRMIZI XETT UCUN YAZMISAM ISLEMEDI */
+
+
+
+.all__header .navbar .menu__list .sub__menu li a:hover .sub__menu  li::before{
+   position: absolute;
+   content:'';
+   top: 0%;
+   left: 0%;
+   width: 3px;
+   height: 100%;
+   background-color: red;
+}
+
+
+.all__header .header__boxes{
     margin-top: 100px;
     display: flex;
     align-items: center;
 }
 
-.header__box{
+.all__header  .header__boxes .header__box{
     width: 600px;
 }
-.header__box h1{
 
-}
-
-
-
-  .header__boxes .header__box h1{
+.all__header  .header__boxes .header__box h1{
     font-size: 55px;
 }
-  .header__boxes .header__box p{
+
+.all__header  .header__boxes .header__box p{
     padding-top: 50px;
     line-height: 30px;
 }
-.header__boxes .header__box a{
-    margin-top: 30px;
-display: block;
 
-width:150px;
-background-color: rgb(236, 66, 66);
-border-radius: 30px;
-text-align: center;
-font-size: 14px;
-color: white;
-padding: 5px;
-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.header__boxes .header__box a:hover{
+.all__header .header__boxes .header__box .btn{
+    margin-top: 30px;
+    width:150px;
+    background-color: rgb(236, 66, 66);
+   
+}  
+
+
+ .all__header .header__boxes .header__box a:hover{
     background-color: rgb(44, 44, 248);
 }
-.about__boxes{
+
+/*HEADER END*/
+
+
+/*ABIUT START*/
+
+
+.about{
+    position: relative;
     
 }
+.about__box{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.about__content {
+    width: 500px;
+
+}
+.about__content  h2{
+    width: 400px;
+    font-size: px;
+    font-weight: 900;
+    line-height: 32px;
+}
+.about__content  p{
+    padding-top: 30px;
+    line-height: 32px;
+}
+.about__box .btn{
+    margin-top: 30px;
+    width: 150px;
+    background-color: rgb(26, 161, 161);
+    padding: 10px;
+  
+}
+.about::after{
+    content: '';
+   position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(121, 112, 112);
+    opacity: 0.3;
+}
+
+
+
+/*ABOUT END*/
+
+/*FORMAT START*/
+
+
+.format__info{
+    margin-top:100px ;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 100px;
+}
+.format__info .format__content{
+    width: 500px;
+}
+
+.format__info .format__content h3{
+    font-size: 24px;
+font-weight: bold;
+}
+.format__info .format__content p{
+    margin-top:30px ;
+    line-height: 30px;
+    color: rgb(78, 77, 77);
+}
+
+.format__info .format__content .format__menu{
+    margin-top: 20px;
+    display: flex;
+    gap:30px;
+    align-items: start;
+}
+.format__info .format__content .format__menu h3{
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+
+      /*FORMAT END*/
+
+     /*SERVICES START8*/
+
+.services{
+    background-color: rgb(5, 134, 255)
+}
+.services__boxes{
+    display: flex;
+    gap: 35px;
+   
+    padding: 100px 0px 100px 0px;
+    
+}
+.services__boxes .services__box{
+    
+    width:370px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.services__boxes .services__box .services__photo{
+    margin-top:40px ;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(5, 134, 255) ;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.services__boxes .services__box .services__content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+   align-items: center;
+}
+
+.services__boxes .services__box .services__content h3{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.services__boxes .services__box .services__content p{
+    margin: 30px ;
+  text-align: center;
+    font-size: 12px;
+    color: rgb(99, 98, 98);
+    
+}
+.services__boxes .services__box .services__content  .btn{
+     margin-bottom: 40px;
+    padding:10px 0px 10px 0px ;
+    width: 120px;
+    background-color:rgb(5, 134, 255) ;
+    
+}
+/*SERVICES END*/
+
+/*QUESTION START*/
+.question__header h2{
+    margin-top: 100px;
+    text-align: center;
+    font-size:55px ;
+    font-weight: 100;
+}
+.question__header p{
+   padding:0px 310px 0px 310px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgb(61, 58, 58);
+}
+.questions__boxes{
+    margin-top:50px ;
+    display: flex;
+    gap: 30px;
+
+}
+
+
+
+.questions__boxes .question__box {
+    width: 580px;
+}
+
+
+
+.questions__boxes .question__box h3{
+    margin-top: 10px;
+    padding-right: 150px;
+   font-size: 24px;
+   font-weight:600;
+   line-height:30px;
+}
+.questions__boxes .question__box p{
+    margin-top:40px ;
+    font-size: 24px;
+    line-height:30px;
+    color: rgb(65, 63, 63);
+
+}
+.questions__boxes .question__box span{
+    display: block;
+    margin-top: 40px;
+    font-size: 24px; 
+    color: rgb(65, 63, 63);
+}
+.questions__boxes .question__box span a{
+    color:rgb(5, 134, 255)  ;
+}
+.questions__boxes  .question__box .btn{
+    margin-top: 40px;
+    padding: 15px 0px 15px 0px;
+    width: 120px;
+    background-color:rgb(5, 134, 255) ;
+}
+.question__answer{
+    width: 580px;
+    background-color: rgb(240, 235, 235);
+
+}
+
+.questions__boxes .question__answer ul{
+    position: relative;
+}
+.questions__boxes .question__answer ul li{
+    padding:20px 0px 20px 10px;
+}
+.questions__boxes .question__answer ul li a{
+    display: block;
+    font-size: 30px;
+    color: rgb(65, 63, 63) ;
+
+}
+
+
+/*ASAGIDA ISTEYIRDOM HER LI-NIN ALTINDAN XETT CEKILSIN.TEK EN AXIRDA CEKILIR */
+
+/*BIR DE HER SUALA BASANDA MELUMATIN ACILMASINI ELEYE BILMEDIM*/
+
+.questions__boxes  .question__answer ul li a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+}
+
+/*QUESTION END*/
+/*CONTACT START*/
+.contact__menu{
+    margin-top: 100px;
+    display: flex;
+}
+.contact__menu   .message__box{ 
+    background-color:rgb(5, 134, 255)  ;
+    width: 800px;
+    height: 450px;
+    padding: 100px 0px 0px 80px;
+}
+
+.contact__menu    .message__box input{
+    
+    background-color:rgb(153, 203, 250) ;
+    padding:15px 0px 15px 15px ;
+    border: none;
+    width: 290px;
+    font-size: 18px;
+    color: white;
+    margin-left: 20px;
+
+}
+.contact__menu    .message__box textarea{
+    margin:25px 0px 0px 20px;
+    padding:30px 0px 0px 30px ;
+    background-color:rgb(153, 203, 250) ;
+   width: 602px;
+   height: 150px;
+   border: none;
+   font-size:18px ;
+   color: white;
+}
+
+.contact__menu    .message__box .button{
+    background-color: rgb(216, 86, 86);
+    border-radius: 30px;
+    width: 100px;
+    text-align: center;
+    padding-right: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 30px;
+    margin-left: 270px;
+   
+
+}
+/*CONTACT END*/
+/*FOOTER HISSEDE LINKLER YUKLENILMIR */
