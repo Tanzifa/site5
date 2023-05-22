@@ -92,12 +92,12 @@ header{
     color: orange;
 
 }
-.all__header .navbar .menu__list .drop__down  .sub__menu{
+.all__header .navbar .menu__list   .sub__menu{
     display: none;
 }
 
 
-.all__header .navbar .menu__list .drop__down:hover .sub__menu{
+.all__header .navbar .menu__list li:hover .sub__menu{
     display: block;
 }
 .all__header .navbar .menu__list .sub__menu{
