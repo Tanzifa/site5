@@ -1,3 +1,14 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Poppins', sans-serif;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
 *, ::after, ::before{
     margin: 0;
     padding: 0;
@@ -5,6 +16,7 @@
   
    
 }
+
 a{text-decoration: none;
 }
 
@@ -24,6 +36,14 @@ ul{
 
 }
 
+h2{
+   font-size:30px;
+}
+
+
+p{
+    font-size: 18px;
+}
 
      /*HEADER START*/
 
@@ -43,10 +63,15 @@ header{
     max-width: 1340px;
     margin: 0 auto;
 }
+
 .all__header .header__menu{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+   
+    
 }
 .all__header .navbar .menu__list{
     display: flex;
@@ -60,15 +85,15 @@ header{
 }
 .all__header .navbar .menu__list li a{
     color: white;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 400;
 }
 .all__header .navbar .menu__list li a:hover{
     color: orange;
 
 }
 .all__header .navbar .menu__list .drop__down  .sub__menu{
-    display: blok;
+    display: none;
 }
 
 
@@ -96,19 +121,23 @@ header{
 
 .all__header .navbar .menu__list .sub__menu li a{
     color: rgb(94, 92, 92);
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
 
 }
 .all__header .navbar .menu__list  .drop__down  .sub__menu li a:hover  .all__header .navbar .menu__list  .drop__down .sub__menu li{
     border-left: 4px solid red;
+    transition: 0.5;
 }
 
 .all__header .navbar .menu__list .sub__menu li a:hover{
     color: red;
    
+   
 }
-
+.all__header .navbar .menu__list .sub__menu li a:hover .sub__menu li{
+    border-left: 2px solid red;
+}
 
    /* ASAGIDA DROP MENYU HOVER OLANDA SAGDA YARANAN QIRMIZI XETT UCUN YAZMISAM ISLEMEDI */
    /*DROW DOWN-IN USTUNE GELENDE ALT MENU ACILIR AMMA USTUNE GELMEK OLMUR SRAZU BAGLANIR */
@@ -129,27 +158,33 @@ header{
 .all__header .header__boxes{
     margin-top: 100px;
     display: flex;
+    gap: 40px;
     align-items: center;
 }
 
 .all__header  .header__boxes .header__box{
-    width: 600px;
+    width: 500px;
 }
 
 .all__header  .header__boxes .header__box h1{
-    font-size: 65px;
+    font-size: 55px;
+    font-weight: 400;
+}
+.all__header  .header__boxes .header__box h1 span{
+    font-weight: 800;
 }
 
 .all__header  .header__boxes .header__box p{
     padding-top: 50px;
-    line-height: 30px;
-    font-size: 24px;
+    line-height: 36px;
+    font-size: 18px;
 }
 
 .all__header .header__boxes .header__box .btn{
     margin-top: 30px;
     width:150px;
-    background-color: rgb(236, 66, 66);
+    padding: 10px 0px 10px 0px;
+    background-color: rgba(236, 66, 66, 0.945);
    
 }  
 
@@ -172,7 +207,8 @@ header{
     margin-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
   padding-bottom: 100px;
 }
 
@@ -182,12 +218,12 @@ header{
 }
 .about__content  h2{
     width: 400px;
-    font-size:32px;
+    font-size:30px;
     font-weight: 900;
-    line-height: 32px;
+    line-height: 40px;
 }
 .about__content  p{
-    font-size: 24px;
+   
     padding-top: 30px;
     line-height: 32px;
 }
@@ -228,12 +264,12 @@ header{
 }
 
 .format__info .format__content h2{
-    font-size: 32px;
-font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
 }
 .format__info .format__content p{
     margin-top:30px ;
-    font-size: 24px;
+   
     line-height: 30px;
     color: rgb(78, 77, 77);
 }
@@ -248,7 +284,6 @@ font-weight: bold;
     padding-top: 10px;
     font-size: 24px;
 }
-
 
       /*FORMAT END*/
 
@@ -272,7 +307,7 @@ font-weight: bold;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 0 auto;
 }
 .services__boxes .services__box .services__photo{
     margin-top:40px ;
@@ -293,15 +328,17 @@ font-weight: bold;
 
 .services__boxes .services__box .services__content h3{
     margin-top: 30px;
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight:600;
     text-align: center;
+    color: rgb(31, 28, 28);
 
 }
 .services__boxes .services__box .services__content p{
     margin: 30px ;
   text-align: center;
-    font-size: 18px;
+  font-size: 16px;
+    
     color: rgb(99, 98, 98);
     
 }
@@ -325,7 +362,6 @@ font-weight: bold;
    padding:0px 310px 0px 310px;
     text-align: center;
     margin-top: 30px;
-    font-size: 24px;
     color: rgb(61, 58, 58);
 }
 .questions__boxes{
@@ -352,7 +388,7 @@ font-weight: bold;
 }
 .questions__boxes .question__box p{
     margin-top:40px ;
-    font-size: 24px;
+    
     line-height:30px;
     color: rgb(65, 63, 63);
 
@@ -362,39 +398,53 @@ font-weight: bold;
     margin-top: 40px;
     font-size: 24px; 
     color: rgb(65, 63, 63);
+    margin-bottom: 60px;
 }
 .questions__boxes .question__box span a{
     color:rgb(5, 134, 255)  ;
 }
 .questions__boxes  .question__box .btn{
     margin-top: 40px;
+   
     padding: 15px 0px 15px 0px;
     width: 120px;
     background-color:rgb(5, 134, 255) ;
 }
 .question__answer{
+    
     width: 580px;
     background-color: rgb(240, 235, 235);
 
 }
 
-.questions__boxes .question__answer ul{
-    position: relative;
-}
-.questions__boxes .question__answer ul li{
-    padding:20px 0px 20px 10px;
-}
-.questions__boxes .question__answer ul li a{
-    display: block;
-    font-size: 30px;
-    color: rgb(65, 63, 63) ;
-
-}
-
-.questions__boxes .question__answer ul li{
+.question__answer  h3  {
     border-bottom: 1px solid white;
+}
+
+.question__answer h3{
+    padding:20px 0px 20px 20px;
+    font-size: 24px;
+    font-weight: 300;
 
 }
+.question__answer .sections{
+    display: flex;
+    align-items: center;
+   
+    border-bottom: 1px solid white;
+    
+}
+.question__answer div{
+    border-bottom: 1px solid white;
+}
+
+
+.question__answer  div p{
+    padding: 10px 20px 10px 10px;
+
+
+}
+
 
 
 /*ASAGIDA ISTEYIRDOM HER LI-NIN ALTINDAN XETT CEKILSIN.TEK EN AXIRDA CEKILIR */
@@ -438,7 +488,7 @@ font-weight: bold;
 }
 .contact__menu    .message__box textarea{
     margin:25px 0px 0px 20px;
-    padding:30px 0px 0px 30px ;
+    padding:15px 0px 0px 15px ;
     background-color:rgb(153, 203, 250) ;
    width: 722px;
    height: 150px;
@@ -450,12 +500,12 @@ font-weight: bold;
 .contact__menu    .message__box .button{
     background-color: rgb(216, 86, 86);
     border-radius: 30px;
-    width: 100px;
+    width: 110px;
     text-align: center;
     padding-right: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-top: 30px;
-    margin-left: 270px;
+    margin-left: 330px;
    
 
 }
@@ -473,9 +523,12 @@ font-weight: bold;
 }
 
 .footer    .footer__menu  .author span{
-    font-size: 24px;
+    font-size: 18px;
     color: rgb(92, 91, 91);
     
+}
+.footer    .footer__menu  .author span a{
+    color:rgb(5, 134, 255)
 }
 .footer    .footer__menu .footer__list ul{
     display: flex;

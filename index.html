@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Montserrat:wght@100;200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&family=Montserrat:wght@100;200;300;400&family=Poppins:wght@100;200;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+    
+    
     <title>Site5</title>
 </head>
 <body>
@@ -28,7 +39,7 @@
                             
                             <div class="drop__down">
 
-                            <li ><a href="#">DROP DOWN<i class="fa-sharp fa-solid fa-caret-down"></i> </a>
+                            <li ><a href="#">DROP DOWN <i class="fa-sharp fa-solid fa-caret-down"></i> </a>
                                
                                      <ul class="sub__menu">
                                          <li><a href="#">ABOUT US</a></li>
@@ -46,7 +57,7 @@
         
             <div class="header__boxes">
                 <div class="header__box">
-                    <h1>ART FACTORY is free for YOU</h1>
+                    <h1>Art Factory is free <span>for YOU </span></h1>
                     <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this for your business website.</p>
                      <a class="btn" href="#">FIND OUT MORE</a>  
                 </div>
@@ -191,6 +202,7 @@
             </div>
             <div class="questions__boxes">
                  <div class="question__box">
+                
                      <h3>Class aptent taciti sociosqu ad litora torquent per conubia</h3>
                     <p>Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies risus quis risus scelerisque, a aliquam tellus maximus. Cras pretium nulla ac convallis iaculis. Aenean bibendum erat vitae odio sodales, in facilisis tellus volutpat.</p>
                      <p> Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex. Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non tincidunt dui. Lorem ipsum dolor sit amet.
@@ -199,16 +211,61 @@
                      <a class="btn" href="#">Contact us</a>
 
                  </div>
-                 <div class="question__answer">
-                     <ul>
-                        <li><a href="#">First Common Question</a> </li>
-                         <li><a href="#">Second Question Answer</a></li>
-                         <li><a href="#">Third Answer for you</a></li>
-                         <li><a href="#">Fourth Question Asked</a></li>
-                        <li><a href="#">Fifth Ever Question</a></li>
-                        <li><a href="#">Sixth Sense Question</a></li>
-                     </ul>
+                 <div class="question__answer"  id="accordion">
+                  
+                    <h3>First Common Question </h3>
+                   
+                        <div>
+                        <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti..</p>
 
+                           <p> Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat</p>
+                        </div>
+            
+             
+                    <h3>Second Question Answer</h3>
+                       <div>
+                                <p>Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis, tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor vestibulum at a ante.</p>
+
+                                <p>Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor, eu luctus orci sagittis in. In blandit fringilla mollis.</p>
+
+                       </div>
+                 
+                
+                        <h3>Third Answer for you</h3>
+                        <div>
+                                <p>
+                                    Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices dignissim.</p>
+
+                                    <p>Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio rhoncus pharetra.
+                                </p>
+
+
+                   </div>
+                 
+                        <h3>Fourth Question Asked</h3>
+                        <div>
+                         <p>Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi, id sollicitudin diam ex at nisi.
+                        </p>
+                        <p>Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis. Praesent at sem in massa iaculis pharetra.</p>
+
+
+                        </div>
+              
+                 
+                        <h3>Fifth Ever Question</h3>
+                       <div>
+                            <p>Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien elit, mollis ut ultricies quis, fermentum nec ante.</p>
+                            <p>ed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum lectus, non sagittis ante euismod eu.</p>
+                       </div>
+           
+          
+                        <h3>Sixth Sense Question</h3>
+                        
+                        <div>
+                       
+                            <p>Suspendisse potenti. Ut dapibus leo ut massa vulputate semper. Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
+                        </div>
+                    
                     </div>
                  </div>
              </div>
