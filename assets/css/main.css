@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'League Spartan', sans-serif;
+  
    
 }
 a{text-decoration: none;
@@ -40,7 +40,7 @@ header{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1340px;
     margin: 0 auto;
 }
 .all__header .header__menu{
@@ -60,19 +60,19 @@ header{
 }
 .all__header .navbar .menu__list li a{
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
 }
 .all__header .navbar .menu__list li a:hover{
     color: orange;
 
 }
-.all__header .navbar .menu__list li .drop__menu{
-    display: none;
+.all__header .navbar .menu__list .drop__down  .sub__menu{
+    display: blok;
 }
 
 
-.all__header .navbar .menu__list .drop__down:hover .drop__menu{
+.all__header .navbar .menu__list .drop__down:hover .sub__menu{
     display: block;
 }
 .all__header .navbar .menu__list .sub__menu{
@@ -87,7 +87,8 @@ header{
 
 }
 .all__header .navbar .menu__list .sub__menu li{
-    position: relative;
+   
+   
     border-bottom: 1px solid rgb(250, 238, 238);
     padding: 10px;
    
@@ -95,13 +96,17 @@ header{
 
 .all__header .navbar .menu__list .sub__menu li a{
     color: rgb(94, 92, 92);
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
 
+}
+.all__header .navbar .menu__list  .drop__down  .sub__menu li a:hover  .all__header .navbar .menu__list  .drop__down .sub__menu li{
+    border-left: 4px solid red;
 }
 
 .all__header .navbar .menu__list .sub__menu li a:hover{
     color: red;
+   
 }
 
 
@@ -132,12 +137,13 @@ header{
 }
 
 .all__header  .header__boxes .header__box h1{
-    font-size: 55px;
+    font-size: 65px;
 }
 
 .all__header  .header__boxes .header__box p{
     padding-top: 50px;
     line-height: 30px;
+    font-size: 24px;
 }
 
 .all__header .header__boxes .header__box .btn{
@@ -176,11 +182,12 @@ header{
 }
 .about__content  h2{
     width: 400px;
-    font-size: px;
+    font-size:32px;
     font-weight: 900;
     line-height: 32px;
 }
 .about__content  p{
+    font-size: 24px;
     padding-top: 30px;
     line-height: 32px;
 }
@@ -189,6 +196,7 @@ header{
     width: 150px;
     background-color: rgb(26, 161, 161);
     padding: 10px;
+    font-size: 14px;
   
 }
 .about::after{
@@ -219,12 +227,13 @@ header{
     width: 500px;
 }
 
-.format__info .format__content h3{
-    font-size: 24px;
+.format__info .format__content h2{
+    font-size: 32px;
 font-weight: bold;
 }
 .format__info .format__content p{
     margin-top:30px ;
+    font-size: 24px;
     line-height: 30px;
     color: rgb(78, 77, 77);
 }
@@ -237,7 +246,7 @@ font-weight: bold;
 }
 .format__info .format__content .format__menu h3{
     padding-top: 10px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 
@@ -284,7 +293,7 @@ font-weight: bold;
 
 .services__boxes .services__box .services__content h3{
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
 
@@ -292,7 +301,7 @@ font-weight: bold;
 .services__boxes .services__box .services__content p{
     margin: 30px ;
   text-align: center;
-    font-size: 12px;
+    font-size: 18px;
     color: rgb(99, 98, 98);
     
 }
@@ -316,7 +325,7 @@ font-weight: bold;
    padding:0px 310px 0px 310px;
     text-align: center;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 24px;
     color: rgb(61, 58, 58);
 }
 .questions__boxes{
@@ -337,9 +346,9 @@ font-weight: bold;
 .questions__boxes .question__box h3{
     margin-top: 10px;
     padding-right: 150px;
-   font-size: 24px;
+   font-size: 32px;
    font-weight:600;
-   line-height:30px;
+   line-height:40px;
 }
 .questions__boxes .question__box p{
     margin-top:40px ;
@@ -382,21 +391,26 @@ font-weight: bold;
 
 }
 
+.questions__boxes .question__answer ul li{
+    border-bottom: 1px solid white;
+
+}
+
 
 /*ASAGIDA ISTEYIRDOM HER LI-NIN ALTINDAN XETT CEKILSIN.TEK EN AXIRDA CEKILIR */
 
 /*BIR DE HER SUALA BASANDA MELUMATIN ACILMASINI ELEYE BILMEDIM*/
 
-.questions__boxes  .question__answer ul li a::before{
+ /*   .questions__boxes  .question__answer ul li a::before{
     content: '';
     position: absolute;
     top: 100%;
     left: 0%;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: white; } */
 
-}
+
 
 /*QUESTION END*/
 /*CONTACT START*/
@@ -406,7 +420,7 @@ font-weight: bold;
 }
 .contact__menu   .message__box{ 
     background-color:rgb(5, 134, 255)  ;
-    width: 800px;
+    width: 950px;
     height: 450px;
     padding: 100px 0px 0px 80px;
 }
@@ -416,7 +430,7 @@ font-weight: bold;
     background-color:rgb(153, 203, 250) ;
     padding:15px 0px 15px 15px ;
     border: none;
-    width: 290px;
+    width:350px;
     font-size: 18px;
     color: white;
     margin-left: 20px;
@@ -426,7 +440,7 @@ font-weight: bold;
     margin:25px 0px 0px 20px;
     padding:30px 0px 0px 30px ;
     background-color:rgb(153, 203, 250) ;
-   width: 602px;
+   width: 722px;
    height: 150px;
    border: none;
    font-size:18px ;
@@ -447,3 +461,28 @@ font-weight: bold;
 }
 /*CONTACT END*/
 /*FOOTER HISSEDE LINKLER YUKLENILMIR */
+
+.footer{
+    margin-top: 70px;
+    padding-bottom: 70px;
+} 
+.footer    .footer__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer    .footer__menu  .author span{
+    font-size: 24px;
+    color: rgb(92, 91, 91);
+    
+}
+.footer    .footer__menu .footer__list ul{
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+    color:rgb(5, 134, 255) ;
+}
+.footer    .footer__menu .footer__list ul a{
+    color:rgb(5, 134, 255) ;
+}
