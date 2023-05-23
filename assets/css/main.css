@@ -3,7 +3,9 @@ body{
    font-family: 'Montserrat', sans-serif;
    font-family: 'Poppins', sans-serif;
    font-family: 'Roboto', sans-serif;
+  
 }
+
 
 
 
@@ -57,6 +59,7 @@ header{
    background-position: center;
    width: 100%;
    padding-bottom: 300px;
+  
 }
 
 .container{
@@ -69,6 +72,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
     
    
     
@@ -96,6 +100,10 @@ header{
     display: none;
 }
 
+
+  /*DROW DOWN-IN USTUNE GELENDE ALT MENU ACILIR AMMA USTUNE GELMEK OLMUR SRAZU BAGLANIR */
+
+  
 
 .all__header .navbar .menu__list li:hover .sub__menu{
     display: block;
@@ -135,24 +143,19 @@ header{
    
    
 }
+
+  /* ASAGIDA DROP MENYU HOVER OLANDA SAGDA YARANAN QIRMIZI XETT UCUN YAZMISAM ISLEMEDI */
+
 .all__header .navbar .menu__list .sub__menu li a:hover .sub__menu li{
     border-left: 2px solid red;
+    transition: 0.5;
 }
 
-   /* ASAGIDA DROP MENYU HOVER OLANDA SAGDA YARANAN QIRMIZI XETT UCUN YAZMISAM ISLEMEDI */
-   /*DROW DOWN-IN USTUNE GELENDE ALT MENU ACILIR AMMA USTUNE GELMEK OLMUR SRAZU BAGLANIR */
+ 
+ 
 
 
 
-.all__header .navbar .menu__list .sub__menu li a:hover .sub__menu  li::before{
-   position: absolute;
-   content:'';
-   top: 0%;
-   left: 0%;
-   width: 3px;
-   height: 100%;
-   background-color: red;
-}
 
 
 .all__header .header__boxes{
